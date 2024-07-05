@@ -17,7 +17,7 @@ reiniciar.addEventListener("click",function(){
 
 presionar.addEventListener("click", function() {
     var cuadro = parseInt(document.getElementById("cuadro_numero").value);
-    if (isNaN(cuadro) || cuadro == 0 || cuadro == 101) {
+    if (isNaN(cuadro) || cuadro > 100 || cuadro < 1) {
         document.getElementById("sugerencias").innerHTML="Por favor, ingrese un número válido";
         return;
     }
